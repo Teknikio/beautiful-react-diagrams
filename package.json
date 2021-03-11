@@ -14,7 +14,8 @@
     "lint-scss": "stylelint '**/*.scss'",
     "lint": "npm run lint-js && npm run lint-tests && npm run lint-scss",
     "test": "nyc mocha --recursive --exit \"./tests/**/*.spec.+(js|jsx)\"",
-    "test-types": "npx tsc -p . --noEmit"
+    "test-types": "npx tsc -p . --noEmit",
+    "precommit": "build"
   },
   "browserslist": [
     "> 0.25%",
